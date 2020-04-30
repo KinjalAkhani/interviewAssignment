@@ -19,16 +19,23 @@ public class LeapYear {
 		try{
 			
 			/**
-			 * Test case - 1 : if given year is divisible by 400 or 4 then return true
+			 * Test case - 1 : if given year is divisible by 400 then return true
 			 */
-			if(year % 400 == 0 || year % 4 == 0){
+			if(year % 400 == 0){
 				return true;
 			}
 			/**
-			 * Test case - 1 : if given year is divisible by 100 then return false
+			 * Test case - 2 : if given year is divisible by 100 then return false
 			 */
 			if(year % 100 == 0){
 				return false;
+			}
+			
+			/**
+			 * Test case - 3 : if given year is divisible by 4 then return true
+			 */
+			if(year % 4 == 0){
+				return true;
 			}
 			
 			return false;
