@@ -47,7 +47,7 @@ public class LeapYear {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		System.out.println("********** Java Leap Year Program ***********");
+		System.out.println("********** Java Single Leap Year Check Program ***********");
 		
 		Scanner scanner = null;
 		try{
