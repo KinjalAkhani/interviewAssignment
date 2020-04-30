@@ -16,21 +16,31 @@ public class LeapYear {
 	 */
 	public static boolean checkLeapYear(int year){
 		
-		/**
-		 * Test case - 1 : if given year is divisible by 400 or 4 then return true
-		 */
-		if(year % 400 == 0 || year % 4 == 0){
-			return true;
-		}
-		/**
-		 * Test case - 1 : if given year is divisible by 100 then return false
-		 */
-		if(year % 100 == 0){
+		try{
+			
+			/**
+			 * Test case - 1 : if given year is divisible by 400 or 4 then return true
+			 */
+			if(year % 400 == 0 || year % 4 == 0){
+				return true;
+			}
+			/**
+			 * Test case - 1 : if given year is divisible by 100 then return false
+			 */
+			if(year % 100 == 0){
+				return false;
+			}
+			
 			return false;
 		}
-		
-		return false;
-		
+		catch(ArithmeticException ae){
+			// Arithmetic Exception occurs
+			throw ae;
+		}
+		catch(Exception e){
+			// General exception
+			throw e;
+		}
 	}
 	
 	/**
